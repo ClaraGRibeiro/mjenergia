@@ -484,10 +484,6 @@ footer{
 }
 
 @media screen and (max-width: 1430px){
-    body{
-        background-color: red;
-    }
-
     header{
         .chamada{
             display: flex;
