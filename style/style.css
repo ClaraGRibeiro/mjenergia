@@ -29,7 +29,7 @@ body{
     }
 }
 
-#wpp-botao, header, #section1, #section3, footer{
+#wpp-botao, header, #areas, #trabalhos, footer{
     padding: 2rem 15%;
 }
 
@@ -174,7 +174,7 @@ header{
 
 /* //////////// */
 
-#section1{
+#areas{
     .texto{
         p{
             padding: 0 15%;
@@ -196,7 +196,7 @@ header{
     }
 }
 
-#section1, #section3{
+#areas, #trabalhos{
     text-align: center;
     .texto{
         h2{
@@ -215,7 +215,7 @@ header{
 
 /* //////////// */
 
-#section2{
+#atuacao{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 'imagem1 texto1' 'texto2 imagem2';
@@ -263,7 +263,7 @@ header{
 
 /* //////////// */
 
-#section4{
+#orcamento{
     margin-top: 2rem;
     background-color: #ffec99d1;
     .formulario{
@@ -337,7 +337,7 @@ footer{
 }
 
 @media screen and (max-width: 650px){
-    #wpp-botao, header, #section1, #section3, footer{
+    #wpp-botao, header, #areas, #trabalhos, footer{
         padding: 2rem 8%;
     }
 
@@ -385,7 +385,7 @@ footer{
         }
     }
 
-    #section1{
+    #areas{
         .ilustracoes{
             gap: 2rem;
             p{
@@ -398,7 +398,7 @@ footer{
         }
     }
 
-    #section1, #section3{
+    #areas, #trabalhos{
         .texto{
             h2{
                 font-size: 2.6rem;
@@ -409,7 +409,7 @@ footer{
         }
     }
 
-    #section2{
+    #atuacao{
         grid-template-columns: 1fr;
         grid-template-areas: 'texto1' 'imagem1' 'texto2' 'imagem2';
         align-items: center;
@@ -442,12 +442,12 @@ footer{
         }
     }
 
-    #section3{
+    #trabalhos{
         margin: 0;
         padding: 0;
     }
 
-    #section4{
+    #orcamento{
         .formulario{
             width: 100%;
             border-radius: 0;
@@ -507,11 +507,11 @@ footer{
         }
     }
     
-    #section3{
+    #trabalhos{
         padding: 2rem 8%;
     }
 
-    #section4{
+    #orcamento{
         padding: 3rem 0;
         .formulario{
             padding: 0;
