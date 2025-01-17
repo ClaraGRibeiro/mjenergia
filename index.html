@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ Engenharia - Energia Solar Montes Claros</title>
+    <meta name="description" content="Conheça a energia solar fotovoltaica, economize até 95% dos custos de energia na sua empresa ou residência.">
+    <meta name="keywords" content="energia solar,economia de energia,gerar energia"> 
+    <!-- MUDAR PARA CLIMATIZAÇÃO -->
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="./assets/logo-icone.svg">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/cc9f72a45c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+<body>
+    <header>
+        <a id="wpp-botao" target="_blank" href="https://api.whatsapp.com/send?phone=553898860302">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <div class="topo">
+            <img class="logo" src="./assets/logo.svg" alt="Logo da MJ Engenharia">
+            <div class="redes">
+                <p>Nossas redes</p>
+                <div class="icones">
+                    <a target="_blank" href="https://www.instagram.com/mj_engenharia_/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=553898860302">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/marcosjuniorengenharia">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="chamada">
+            <div class="conteudo">
+                <h1>Sustentabilidade e tecnologia. Economize 95% na sua conta de luz!</h1>
+                <p>Soluções em projetos e geração de energia sustentável.</p>
+            </div>
+            <div class="formulario">
+                <h2>Solicite seu orçamento personalizado!</h2>
+                <form action="" method="post">
+                    <input type="text" name="nome" id="nome" placeholder="Nome*">
+                    
+                    <input type="text" id="cep" placeholder="Digite seu CEP*" maxlength="8" minlength="8" required>
+
+                    <div class="opcoes">
+                        <label for="">Me interesso em:*</label>
+                        <div>
+                            <input type="radio" id="energiasolar" name="interesse" value="Energia Solar">
+                            <label for="energiasolar">Energia solar</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="climatizacao" name="interesse" value="Climatização">
+                            <label for="climatizacao">Climatização</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="ambos" name="interesse" value="Energia Solar e Climatização">
+                            <label for="ambos">Ambos</label>
+                        </div>
+                    </div>
+
+                    <p id="erro">Insira seus dados.</p>
+                    <a href="#" id="whatsapp-link">FAZER ORÇAMENTO</a>
+                </form>
+            </div>
+        </div>
+    </header>
+    <section id="section1">
+        <div class="texto">
+            <h2>Comercial, Rural e Residencial</h2>
+            <p>Conheça a energia solar fotovoltaica, economize até 95% dos custos de energia na sua empresa ou residência.</p>
+        </div>
+        <div class="ilustracoes">
+            <div>
+                <img src="/assets/image1.png" alt="">
+                <p>INSTALAÇÃO EM EMPRESAS<br>OU RESIDÊNCIAS</p>
+            </div>
+            <div>
+                <img src="/assets/image2.png" alt="">
+                <p>FINANCIAMENTO COM TAXAS<br>REDUZIDAS EM ATÉ 36X</p>
+            </div>
+            <div>
+                <img src="/assets/image3.png" alt="">
+                <p>MAIS ECONOMIA<br>NA SUA CONTA</p>
+            </div>
+        </div>
+        <div>
+            <video controls autoplay poster="/assets/videoframe.png">
+                <source src="/assets/video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <section id="section2">
+        <div class="texto-item">
+            <h2>Para sua Residência</h2>
+            <p>Gere sua própria energia renovável, para todos os seus equipamentos domésticos.</p>
+        </div>
+        <div class="imagem-item">
+            <img src="/assets/banner2.png" alt="">
+        </div>
+        
+        <div class="texto-item">
+            <h2>Para sua Empresa</h2>
+            <p>Projetos personalizados, economia significativa, obtenha o retorno efetivo do seu investimento!</p>
+        </div>
+        <div class="imagem-item">
+            <img src="/assets/banner3.png" alt="">
+        </div>
+    </section>
+    <section id="section3">
+        <div class="texto">
+            <h2>Trabalhos já realizados</h2>
+            <p>Veja alguns trabalhos feitos pela MJ Engenharia</p>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="./assets/slides/s1.png"></div>
+            <div class="item"><img src="./assets/slides/s2.png"></div>
+            <div class="item"><img src="./assets/slides/s3.png"></div>
+            <div class="item"><img src="./assets/slides/s4.png"></div>
+            <div class="item"><img src="./assets/slides/s5.png"></div>
+            <div class="item"><img src="./assets/slides/s6.png"></div>
+            <div class="item"><img src="./assets/slides/s7.png"></div>
+        </div>
+    </section>
+    <section id="section4">
+        <div class="formulario">
+            <h2>Solicite seu orçamento personalizado!</h2>
+            <p>Cuidamos de todo o processo: projeto, instalação, homologação e manutenção.</p>
+            <form action="" method="post">
+                <input type="text" name="nome" id="nome2" placeholder="Nome*">
+                
+                <input type="text" id="cep2" placeholder="Digite seu CEP*" maxlength="8" minlength="8" required>
+
+                <div class="opcoes">
+                    <label for="">Me interesso em:*</label>
+                    <div>
+                        <input type="radio" id="energiasolar2" name="interesse2" value="Energia Solar">
+                        <label for="energiasolar2">Energia solar</label><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="climatizacao2" name="interesse2" value="Climatização">
+                        <label for="climatizacao2">Climatização</label><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="ambos2" name="interesse2" value="Energia Solar e Climatização">
+                        <label for="ambos2">Ambos</label>
+                    </div>
+                </div>
+
+                <p id="erro2">Insira seus dados.</p>
+                <a href="#" id="whatsapp-link2">FAZER ORÇAMENTO</a>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="rodape">
+            <img class="logo" src="./assets/logo-footer.svg" alt="Logo da MJ Engenharia">
+            <div  class="icones">
+                <a target="_blank" href="https://www.instagram.com/mj_engenharia_/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=553898860302">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/marcosjuniorengenharia">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+        <p style="padding-bottom: 1rem;">Gere sua própria energia renovável, tenha uma economia significativa e preserve o meio ambiente!</p>
+        <p id="cred">&copy; Todos os direitos reservados</p>
+        <a target="_blank" style="color: white;" href="https://www.linkedin.com/in/clara-gon%C3%A7alves-ribeiro-66b07a213/">Desenvolvido por Clara Ribeiro</a>
+    </footer>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            dots:true,
+            nav:false,
+            responsive:{
+                0:{
+                    items:1
+                }
+            }
+        })
+    });
+
+
+    let erro = document.getElementById('erro');
+    const whatsappLink = document.getElementById('whatsapp-link');
+    const whatsappLink2 = document.getElementById('whatsapp-link2');
+    const telefone = "553898860302";
+    let nome = '';
+    let interesse = '';
+    let cep = '';
+    let endereco = '';
+
+    whatsappLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        nome = document.getElementById('nome').value;
+        interesse = document.querySelector('input[name="interesse"]:checked');
+        cep = document.getElementById('cep').value;
+        erro = document.getElementById('erro');
+        processarFormulario(nome, cep, interesse);
+    });
+
+    whatsappLink2.addEventListener('click', function (e) {
+        e.preventDefault();
+        nome = document.getElementById('nome2').value;
+        interesse = document.querySelector('input[name="interesse2"]:checked');
+        cep = document.getElementById('cep2').value;
+        erro = document.getElementById('erro2');
+        processarFormulario(nome, cep, interesse);
+    });
+
+    function processarFormulario(nome, cep, interesse){
+        console.log(nome, cep, interesse);  // Verifique os valores
+
+        if (!nome || !cep || !interesse) {
+            erro.textContent = "Por favor, preencha todos os campos!";
+            erro.style.visibility = 'inherit';
+            return;
+        } else{
+            if (cep.length === 8) {
+                erro.style.visibility = 'hidden';
+                buscarEndereco(cep);
+            } else {
+                erro.textContent = "CEP deve ter 8 dígitos.";
+                erro.style.visibility = 'inherit';
+            }
+        }
+    }
+
+    function buscarEndereco(cep) {
+        const url = `https://viacep.com.br/ws/${cep}/json/`;
+
+        fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erro ao buscar o endereço!');
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (data.erro) {
+                erro.textContent = "CEP não encontrado!";
+                erro.style.visibility = 'inherit';
+                limparCampos();
+                return;
+            }
+            const rua = data.logradouro || '';
+            const bairro = data.bairro || '';
+            const cidade = data.localidade || '';
+            const estado = data.uf || '';
+            endereco = `${rua}, ${bairro} | ${cidade} (${estado})`;
+            erro.style.visibility = 'hidden';
+            enviarForm();
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+            erro.textContent = "Não foi possível buscar o endereço.";
+            erro.style.visibility = 'inherit';
+            limparCampos();
+        });
+    }
+
+    function limparCampos() {
+        document.getElementById('rua').value = '';
+        document.getElementById('bairro').value = '';
+        document.getElementById('cidade').value = '';
+        document.getElementById('estado').value = '';
+    }
+    function enviarForm(){
+        const texto = `Olá, me chamo *${encodeURIComponent(nome)}* e moro em *${encodeURIComponent(endereco)}*. Vim pelo seu site e quero fazer um orçamento! Me interesso em *${encodeURIComponent(interesse.value)}*. Aguardo retorno!`;
+        const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${texto}`;
+        window.open(url, '_blank');
+    }
+</script>

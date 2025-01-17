@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+:root{
+    --azul-claro: #26AEEA;
+    --azul-escuro: #014A75;
+    --laranja: #d06416;
+    --amarelo: #FFED99;
+    --preto: #000000;
+    --branco: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    padding: 0;  
+    margin: 0;
+    font-size: 100%;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Alegreya Sans", serif;
+}
+
+body{
+    a, p, h1, h2, form{
+        color: var(--azul-escuro);
+    }
+}
+
+#wpp-botao, header, #section1, #section3, footer{
+    padding: 2rem 15%;
+}
+
+#wpp-botao{
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 2.6rem;
+    transition: 0.6s;
+    &:hover{
+        text-shadow: -1px 1px 2px var(--azul-claro);
+        transition: 0.3s;
+    }
+}
+
+header{
+    background-image: url(../assets/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    gap: 3rem;
+    .redes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        .icones{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            a{
+                font-size: 2.5rem;
+                transition: 0.6s;
+                &:hover{
+                    color: var(--branco);
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+.topo, .chamada{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 12rem;
+}
+
+.chamada{
+    gap: 1rem;
+    align-items: start;
+}
+
+.conteudo{
+    width: 60%;
+    h1{
+        font-size: 3.6rem;
+        font-weight: 800;
+    }
+    p{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+    }
+}
+
+.formulario{
+    width: 40%;
+    background-color: #ffec99d1;
+    padding: 2rem;
+    border-radius: 2rem;
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 1.5rem;
+        input{
+            background-color: var(--branco);
+            border-radius: 1rem;
+            padding: 1rem;
+            width: 100%;
+            border: solid 1px var(--amarelo);
+            &:focus{
+                border: solid 1px var(--laranja);
+                box-shadow: -2px 2px 10px var(--laranja);
+                transition: 0.3s;
+            }
+        }
+        input[type=radio]{
+            width: auto;
+        }
+        .opcoes{
+            padding-left: 1rem;
+            width: 100%;
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            gap: .5rem;
+        }
+        ::placeholder{
+            color: var(--azul-escuro);
+        }
+        p#erro{
+            padding: .1rem;
+            color: var(--laranja);
+        }
+        a{
+            text-align: center;
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+            border: solid 1px transparent;
+            box-shadow: none;
+            font-size: 1.5rem;
+            border-radius: 2rem;
+            padding: 1rem 2rem;
+            transition: 0.6s;
+            &:hover{
+                background-color: var(--branco);
+                color: var(--azul-escuro);
+                border: solid 1px var(--amarelo);
+                box-shadow: -2px 2px 10px var(--laranja);
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+/* //////////// */
+
+#section1{
+    .ilustracoes{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+        p{
+            font-size: 1.2rem;
+        }
+    }
+    video{
+        margin-top: 3rem;
+        width: 100%;
+        max-width: 60rem;
+    }
+}
+
+#section1, #section3{
+    text-align: center;
+    .texto{
+        h2{
+            font-size: 3.6rem;
+            font-weight: 800;
+            width: 100%;
+        }
+        p{
+            font-size: 1.5rem;
+            font-weight: 700;
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+/* //////////// */
+
+#section2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'imagem1 texto1' 'texto2 imagem2';
+    align-items: center;
+    background-color: var(--amarelo);
+    margin-bottom: 2rem;
+    .texto-item{
+        max-width: 30rem;
+        margin: 1rem;
+    }
+    div:nth-of-type(1){
+        grid-area: texto1;
+    }
+    div:nth-of-type(2){
+        grid-area: imagem1;
+        justify-self: end;
+    }
+    div:nth-of-type(3){
+        grid-area: texto2;
+        justify-self: end;
+        text-align: right;
+    }
+    div:nth-of-type(4){
+        grid-area: imagem2;
+    }
+    h2{
+        font-size: 3.6rem;
+        font-weight: 800;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    .imagem-item{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+}
+
+/* //////////// */
+
+#section4{
+    margin-top: 2rem;
+    background-color: #ffec99d1;
+    .formulario{
+        width: 50%;
+        justify-self: center;
+        border-radius: 0;
+        p{
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+        }
+        p#erro2{
+            font-size: 1.5rem;
+            padding: .1rem;
+            color: var(--laranja);
+        }
+    }
+}
+
+/* //////////// */
+
+footer{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+    background-color: var(--azul-escuro);
+    .logo{
+        width: 6rem;
+    }
+    p{
+        font-size: 1.4rem;
+        font-weight: 100;
+        color: var(--branco);
+    }
+    .rodape{
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .icones{
+            display: flex;
+            gap: 1rem;
+            a{
+                font-size: 2.5rem;
+                transition: 0.6s;
+                color: var(--branco);
+                &:hover{
+                    color: var(--laranja);
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+    #cred{
+        border-top: 1px solid var(--branco);
+        padding-top: 1rem;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .topo{
+        .logo{
+            width: 8rem;
+        }
+    }
+    .conteudo{
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.3rem;
+        }
+    }
+    .formulario{
+        h2{
+            font-size: 1.4rem;
+        }
+        form{
+            font-size: 1.2rem;
+            a{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .ilustracoes{
+        gap: 0;
+        p{
+            font-size: 1rem;
+        }
+    }
+    #section2{
+        grid-template-columns: 1fr;
+        grid-template-areas: 'texto1' 'imagem1' 'texto2' 'imagem2';
+        align-items: center;
+        div:nth-of-type(1){
+            grid-area: texto1;
+        }
+        div:nth-of-type(2){
+            grid-area: imagem1;
+        }
+        div:nth-of-type(3){
+            grid-area: texto2;
+            justify-self: start;
+            text-align: left;
+        }
+        div:nth-of-type(4){
+            grid-area: imagem2;
+        }
+        .imagem-item{
+            img{
+                width: 100%;
+            }
+        }
+        .texto-item{
+            h2{
+                font-size: 3rem;
+                font-weight: 800;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+        }
+    }
+    #section3{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .chamada{
+        flex-wrap: wrap;
+        flex-direction: column;
+        .conteudo, .formulario{
+            width: auto;
+            align-self: center;
+        }
+    }
+    #section4{
+        .formulario{
+            width: 80%;
+        }
+    }
+}
