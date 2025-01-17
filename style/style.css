@@ -512,7 +512,9 @@ footer{
     }
 
     #section4{
+        padding: 3rem 0;
         .formulario{
+            padding: 0;
             width: 80%;
         }
     }
