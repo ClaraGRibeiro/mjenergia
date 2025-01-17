@@ -56,67 +56,62 @@ header{
     justify-content: center;
     align-items: space-between;
     gap: 3rem;
-    .redes{
+    .topo, .chamada{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        font-size: 2rem;
-        .icones{
+        .logo{
+            width: 12rem;
+        }
+        .redes{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 2rem;
-            a{
-                font-size: 2.5rem;
-                transition: 0.6s;
-                &:hover{
-                    color: var(--branco);
-                    transition: 0.3s;
+            font-size: 1.6rem;
+            .icones{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                a{
+                    font-size: 2.6rem;
+                    transition: 0.6s;
+                    &:hover{
+                        color: var(--branco);
+                        transition: 0.3s;
+                    }
                 }
+            }
+        }
+    }
+    .chamada{
+        gap: 3rem;
+        align-items: start;
+        .conteudo{
+            h1{
+                font-size: 3.6rem;
+                font-weight: 800;
+            }
+            p{
+                font-size: 1.6rem;
+                font-weight: 700;
+                margin-bottom: 3rem;
             }
         }
     }
 }
 
-.topo, .chamada{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo{
-    width: 12rem;
-}
-
-.chamada{
-    gap: 1rem;
-    align-items: start;
-}
-
-.conteudo{
-    width: 60%;
-    h1{
-        font-size: 3.6rem;
-        font-weight: 800;
-    }
-    p{
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin-bottom: 3rem;
-    }
-}
-
 .formulario{
-    width: 40%;
+    min-width: 28rem;
     background-color: #ffec99d1;
     padding: 2rem;
     border-radius: 2rem;
     h2{
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.6rem;
         margin-bottom: 1rem;
     }
     form{
@@ -125,7 +120,7 @@ header{
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         input{
             background-color: var(--branco);
             border-radius: 1rem;
@@ -162,7 +157,7 @@ header{
             color: var(--branco);
             border: solid 1px transparent;
             box-shadow: none;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             border-radius: 2rem;
             padding: 1rem 2rem;
             transition: 0.6s;
@@ -180,13 +175,18 @@ header{
 /* //////////// */
 
 #section1{
+    .texto{
+        p{
+            padding: 0 15%;
+        }
+    }
     .ilustracoes{
         display: flex;
         justify-content: center;
         gap: 3rem;
         flex-wrap: wrap;
         p{
-            font-size: 1.2rem;
+            font-size: 1.6rem;
         }
     }
     video{
@@ -200,13 +200,13 @@ header{
     text-align: center;
     .texto{
         h2{
-            font-size: 3.6rem;
+            font-size:3.6rem;
             font-weight: 800;
             width: 100%;
         }
         p{
-            font-size: 1.5rem;
-            font-weight: 700;
+            font-size: 1.6rem;
+            font-weight: 500;
             width: 100%;
             margin-bottom: 3rem;
         }
@@ -224,7 +224,7 @@ header{
     margin-bottom: 2rem;
     .texto-item{
         max-width: 30rem;
-        margin: 1rem;
+        margin: 2rem;
     }
     div:nth-of-type(1){
         grid-area: texto1;
@@ -241,12 +241,14 @@ header{
     div:nth-of-type(4){
         grid-area: imagem2;
     }
-    h2{
-        font-size: 3.6rem;
-        font-weight: 800;
-    }
-    p{
-        font-size: 1.5rem;
+    .texto-item{
+        h2{
+            font-size: 3.6rem;
+            font-weight: 800;
+        }
+        p{
+            font-size: 1.6rem;
+        }
     }
     .imagem-item{
         display: flex;
@@ -265,16 +267,17 @@ header{
     margin-top: 2rem;
     background-color: #ffec99d1;
     .formulario{
+        background-color: transparent;
         width: 50%;
         justify-self: center;
         border-radius: 0;
         p{
             text-align: center;
             margin-bottom: 2rem;
-            font-size: 1.2rem;
+            font-size: 1.6rem;
         }
         p#erro2{
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             padding: .1rem;
             color: var(--laranja);
         }
@@ -289,11 +292,18 @@ footer{
     position: relative;
     z-index: 2;
     background-color: var(--azul-escuro);
-    .logo{
-        width: 6rem;
+    .logos{
+        display: flex;
+        gap: 1rem;
+        .logo{
+            height: 6rem;
+        }
+        .logo-nome{
+            height: 6rem;
+        }
     }
     p{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-weight: 100;
         color: var(--branco);
     }
@@ -306,7 +316,7 @@ footer{
             display: flex;
             gap: 1rem;
             a{
-                font-size: 2.5rem;
+                font-size: 2.6rem;
                 transition: 0.6s;
                 color: var(--branco);
                 &:hover{
@@ -325,36 +335,79 @@ footer{
 }
 
 @media screen and (max-width: 650px){
-    .topo{
-        .logo{
-            width: 8rem;
-        }
+    #wpp-botao, header, #section1, #section3, footer{
+        padding: 2rem 8%;
     }
-    .conteudo{
-        h1{
-            font-size: 3rem;
+
+    header{
+        gap: 2rem;
+        .topo, .chamada{
+            .logo{
+                width: 8rem;
+            }
+            .redes{
+                font-size: 1.4rem;
+                .icones{
+                    a{
+                        font-size: 2rem;
+                    }
+                }
+            }
         }
-        p{
-            font-size: 1.3rem;
-        }
-    }
-    .formulario{
-        h2{
-            font-size: 1.4rem;
-        }
-        form{
-            font-size: 1.2rem;
-            a{
-                font-size: 1.2rem;
+        .chamada{
+            .conteudo{
+                width: 100%;
+                h1{
+                    font-size: 2.8rem;
+                }
+                p{
+                    font-size: 1.4rem;
+                    margin-bottom: 0;
+                }
             }
         }
     }
-    .ilustracoes{
-        gap: 0;
-        p{
-            font-size: 1rem;
+
+    .formulario{
+        width: 100%;
+        padding: 1.4rem;
+        h2{
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        form{
+            font-size: 1.4rem;
+            a{
+                font-size: 1.4rem;
+            }
         }
     }
+
+    #section1{
+        .ilustracoes{
+            gap: 2rem;
+            p{
+                font-size: 1.4rem;
+            }
+        }
+        video{
+            margin-top: 3rem;
+            max-width: 100%;
+        }
+    }
+
+    #section1, #section3{
+        .texto{
+            h2{
+                font-size: 2.6rem;
+            }
+            p{
+                font-size: 1.4rem;
+            }
+        }
+    }
+
     #section2{
         grid-template-columns: 1fr;
         grid-template-areas: 'texto1' 'imagem1' 'texto2' 'imagem2';
@@ -373,39 +426,113 @@ footer{
         div:nth-of-type(4){
             grid-area: imagem2;
         }
+        .texto-item{
+            h2{
+                font-size: 2.6rem;
+            }
+            p{
+                font-size: 1.4rem;
+            }
+        }
         .imagem-item{
             img{
                 width: 100%;
             }
         }
-        .texto-item{
-            h2{
-                font-size: 3rem;
-                font-weight: 800;
-            }
-            p{
-                font-size: 1.3rem;
-            }
-        }
     }
+
     #section3{
         margin: 0;
         padding: 0;
     }
-}
 
-@media screen and (max-width: 1200px){
-    .chamada{
-        flex-wrap: wrap;
-        flex-direction: column;
-        .conteudo, .formulario{
-            width: auto;
-            align-self: center;
-        }
-    }
     #section4{
         .formulario{
-            width: 80%;
+            width: 100%;
+            border-radius: 0;
+            p{
+                font-size: 1.4rem;
+            }
+            p#erro2{
+                font-size: 1.4rem;
+                margin: 0;
+            }
+        }
+    }
+
+    footer{
+        .logos{
+            gap: 0;
+            .logo{
+                height: 4rem;
+            }
+            .logo-nome{
+                height: 4rem;
+            }
+        }
+        p{
+            font-size: 1.4rem;
+        }
+        .rodape{
+            .icones{
+                a{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1430px){
+    body{
+        background-color: red;
+    }
+
+    header{
+        .chamada{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+        }
+    }
+    
+    .formulario{
+        padding: 3rem;
+        h2{
+            text-align: center;
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+        form{
+            gap: .6rem;
+        }
+    }
+    
+    #section3{
+        padding: 2rem 8%;
+    }
+
+    footer{
+        .logos{
+            gap: .5rem;
+            .logo{
+                height: 4.8rem;
+            }
+            .logo-nome{
+                height: 4.8rem;
+            }
+        }
+        p{
+            font-size: 1.4rem;
+        }
+        .rodape{
+            .icones{
+                a{
+                    font-size: 2.4rem;
+                }
+            }
         }
     }
 }
